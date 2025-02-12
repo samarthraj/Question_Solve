@@ -111,60 +111,85 @@
 
 
 
-def print_fibonacci(n):
-    pass 
+# def print_fibonacci(n):
+#     a = 0 
+#     b = 1 
 
-
-n = 5
-ans = print_fibonacci(n) 
-print(ans)
-
-
-def all_factors_of_nums(n): 
-
-    pass 
-
-n = 10
-ans = all_factors_of_nums(n)
-print(ans) 
-
-
-def reduce_the_number_to_one(n): 
-    pass 
-
-n = 14
-ans = reduce_the_number_to_one(n) 
-print(ans) 
-
-
-def factorial_of_a_number(numb): 
-
-    #given a number find the number next to the zero in its factorial 
-    #nos that contribute for its factorial are 2 and 5 
-    ct_of_2s = 0
-    ct_of_5s = 0
-    product = 1
-    for i in range(1, numb+1): 
-        while i % 2 == 0: 
-            i = i // 2
-            ct_of_2s += 1
+#     for i in range(n): 
+#         print(a, end = " ")
+#         temp = b
+#         b = a + b
+#         a = temp  
         
-        while i % 5 == 0: 
-            i = i // 5
-            ct_of_5s += 1
+# n = 10
+# ans = print_fibonacci(n) 
+# print(ans)
 
-        product = (product * i) % 10 
+
+# def all_factors_of_nums(n): 
+
+#     #we know that atleast one factor should be < root N 
+#     factor_list = []
+#     for i in range(1, int(n**0.5)+1): 
+#         if n % i == 0: 
+#             n = n // i
+#             factor_list.append(i)
+#             factor_list.append(n) 
     
+#     if n > 1: 
+#        factor_list.append(n)  
 
-    rem_2s = (ct_of_2s - ct_of_5s)
-    ans = (product*(2**rem_2s))%10 
+#     return factor_list 
 
-    return ans 
+# n = 10
+# ans = all_factors_of_nums(n)
+# print(ans) 
+
+# def palindrome(n): 
+#     rev = 0 
+#     original_numb = n 
+#     while n > 0: 
+#         last_number  = n % 10 
+#         rev = rev * 10 + last_number
+#         n = n // 10 
+    
+#     print(original_numb, rev) 
+#     if original_numb == rev:
+#         return True 
+#     else: 
+#         return False
 
 
-numb = 10
-ans = factorial_of_a_number(numb)
-print(ans)
+# n = 1221
+# ans = palindrome(n) 
+# print(ans) 
+
+
+# def factorial_of_a_number(numb): 
+
+#     ct_of_2s = 0
+#     ct_of_5s = 0
+#     fact = 1 
+#     for i in range(1, numb+1): 
+
+#         while i % 2 == 0: 
+#             i = i // 2
+#             ct_of_2s += 1
+        
+#         while i % 5 == 0: 
+#             i = i // 5
+#             ct_of_5s += 1
+        
+#         fact = (fact * i) % 10 
+    
+#     remaining_2s = ct_of_2s - ct_of_5s 
+#     actual_numb = (fact * (2**remaining_2s)) % 10 
+
+#     return actual_numb
+
+# numb = 10
+# ans = factorial_of_a_number(numb)
+# print(ans)
 #3,628,800
 
 
