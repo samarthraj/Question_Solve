@@ -4,17 +4,14 @@
 
 def gcd(a,b): 
     gcd = 0
-    for i in range(1, min(a,b)+1):  
+    for i in range(1, min(a,b)):
         if a % i == 0 and b % i == 0: 
-            gcd = i 
-    
+            gcd = i  
     return gcd
 
-
 def lcm(a,b): 
-    #LCM * HCF = a * b 
-    lcm = a * b // gcd(a,b) 
-    return lcm 
+    lcm = (a * b) // gcd(a,b) 
+    return lcm
 
 a = 48
 b = 18 
