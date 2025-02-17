@@ -16,7 +16,8 @@ def prime_factors(n):
         print(n)
         
     return prime_factor_ls
+    
 
-n = 26
+n = 10
 ans = prime_factors(n)
 print(ans)

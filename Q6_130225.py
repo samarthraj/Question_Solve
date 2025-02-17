@@ -1,10 +1,6 @@
 def merge(nums1, m, nums2, n):
-    i = 0 #nums1 pointer 
-    j = 0 #nums2 pointer 
-    k = 0 #merge index 
+    pass
 
-    nums1 = nums1[:n]
-    
 
 
 
