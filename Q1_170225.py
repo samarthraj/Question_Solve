@@ -62,12 +62,26 @@
 
 
 def shuffle(arr): 
-    i = 0 
-    j = len(arr) // 2
+    
+    x = self.arr[:len(self.arr)//2] #i
+    y = self.arr[len(self.arr)//2:] #j
+    n, i, j = 0, 0, 0
 
-    pass
+    while n < len(self.arr): 
+        if n % 2 == 0: 
+            self.arr[n] = x[i] 
+            n += 1
+            i += 1
+        elif n % 2 != 0: 
+            self.arr[n] = y[j] 
+            n += 1
+            j += 1
+
+    return self.arr
+
     
 arr = [1,2,3,4,4,3,2,1]
+#arr = [2,5,1,3,4,7]
 ans = shuffle(arr)
 print(ans) 
 
