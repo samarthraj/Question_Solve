@@ -13,13 +13,6 @@ def find_max_sub_array(arr,k):
             
 
 
-
-
-
-
-
-
-
 arr = [1,10,4,0,3,5] 
 k = 7
 ans = find_max_sub_array(arr,k) 
