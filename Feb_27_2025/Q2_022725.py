@@ -28,7 +28,7 @@ def find_max_sum_of_sub_array(arr, k):
 
 #arr = [4,4,4]
 #arr = [1,5,4,2,9,9,9]
-arr = [1,1,1,7,8,9
+arr = [1,1,1,7,8,9]
 #size of window 
 k = 3
 ans = find_max_sum_of_sub_array(arr, k) 
