@@ -1,5 +1,6 @@
 #Find the max ones such that you can flip at max one 0 to 1 in a binary array 
 # Sliding Window Concept 
+#This is wrong logic --> but let it be -- you should not think like this! 
 def max_ones(arr):
 
     start_pointer = 0
@@ -25,6 +26,6 @@ def max_ones(arr):
     return max_ct
 
 
-arr = [1,1,1,0,1,0,0,1,1,1] 
+arr = [1,1,1,0,1,1,0,1,1,1,1]
 ans = max_ones(arr)
 print(ans) 
