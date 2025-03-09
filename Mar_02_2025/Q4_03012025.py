@@ -1,12 +1,7 @@
 #Spiral Traversal 
 
 def spiral_traversal(mat): 
-
-    n = len(mat) 
-    m = len(mat[0]) 
-
-    for i in range(0, n): 
-        print(mat[i][])
+    pass
 
 
 

@@ -1,4 +1,6 @@
-def matrix_boundary(arr): 
+#Boundary Traversal 
+def boundary_traversal(arr): 
+
     rows = len(arr)
     cols = len(arr[0]) 
 
@@ -13,9 +15,8 @@ def matrix_boundary(arr):
     
     for l in range(rows-2, 0, -1): 
         print(arr[l][0], end = ' ')
+    
 
-    pass
-
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-ans = matrix_boundary(matrix) 
+arr = [[1, 2, 3, 4],[5, 6, 7, 8],[9, 10, 11, 12],[13, 14, 15,16]] 
+ans = boundary_traversal(arr)
 print(ans) 
