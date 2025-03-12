@@ -1,27 +1,29 @@
 #37. Cells with Odd Values in a Matrix
 
-def solve(indices,mat):
-
+def solve(indices,m,n):
+    mat = [[0]*n for i in range(m)]
     rows = len(mat) 
     cols = len(mat[0]) 
-    
-    # for i in range(0, rows): 
-    #     for j in range(0, cols): 
-    #         for k in indices: 
-    #             if k[0] == i and k[1] == j: 
-    #                 mat[i][j]
+    ct =0
+    for r,c in indices: 
 
-    for k in indices:
-        ri = k[0] 
-        ci = k[1] 
-
-        pass
+        for j in range(cols): 
+            mat[r][j] += 1
         
+        for i in range(rows): 
+            mat[i][c] += 1
+    
+    for i in range(len(mat)): 
+        for j in mat[i]: 
+            if j % 2 != 0: 
+                ct += 1
+    
+    return ct
 
-
-
+m = 2
+n = 3
 indices = [[0,1],[1,1]]
-mat = [[0,0,0],[0,0,0]]
-ans = solve(indices,mat)
+#mat = [[0,0,0],[0,0,0]]
+ans = solve(indices,m, n)
 print(ans) 
 
