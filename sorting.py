@@ -62,13 +62,13 @@ def merge_sort(arr):
     
     return arr
 
-arr = [0,1,7,0,9,-9,100] 
-arr1 = [0,1,7,0,9,-9,100,-2] 
-arr2 = [0,1,7,0,9,-9,100, -1]
-ans = selection_sort(arr)
-ans1 = bubble_sort(arr1)
+#arr = [0,1,7,0,9,-9,100] 
+#arr1 = [0,1,7,0,9,-9,100,-2] 
+arr2 = [1,3,5,10,2,6,8,9]
+#ans = selection_sort(arr)
+#ans1 = bubble_sort(arr1)
 ans2 = merge_sort(arr2) 
-print(ans) 
-print(ans1)
+#print(ans) 
+#print(ans1)
 print(ans2)
 
