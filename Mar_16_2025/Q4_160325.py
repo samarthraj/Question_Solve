@@ -7,10 +7,10 @@ def solve(arr):
         if new_arr[start]*(-1) == new_arr[end]: 
             if [new_arr[start],new_arr[end]] not in ans_arr: 
                 ans_arr.append([new_arr[start],new_arr[end]]) 
-        if new_arr[start]*(-1)  new_arr[end]
-        start += 1
-        end -= 1
-    return ans_arr
+    #     if new_arr[start]*(-1)  new_arr[end]
+    #     start += 1
+    #     end -= 1
+    # return ans_arr
 
 
 arr = [6, 1, 8, 0, 4, -9, -1, 10, -6, -5]

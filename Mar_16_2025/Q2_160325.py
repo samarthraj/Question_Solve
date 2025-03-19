@@ -1,7 +1,7 @@
 # merge overlapping intervals
 def solve(arr):
 
-    
+    pass
         
 
 
