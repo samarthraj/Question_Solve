@@ -31,9 +31,10 @@ def solve(n):
         last_digit = n % 26
         answer = dict[last_digit]
         ans += answer
-        n = n // 26 
-    
-    return ans[::-1] 
+        n = n // 26
+
+    return ans[::-1]
+
 
 n = 704
 ans = solve(n)
